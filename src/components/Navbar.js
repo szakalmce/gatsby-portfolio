@@ -2,7 +2,9 @@ import { Link } from "gatsby"
 import React from "react"
 import { NavLinks } from "../data/data"
 
-const Navbar = () => {
+import { FaBars } from "react-icons/fa"
+
+const Navbar = ({ setShowSidebar, showSidebar }) => {
   return (
     <nav className="navbar-wrapper">
       <div className="container navbar-inner">
@@ -17,12 +19,20 @@ const Navbar = () => {
               activeClassName="navbar-link-active"
               className="navbar-link"
               to={item.link}
-              id={item.id}
+              key={item.id}
             >
               {item.name}
             </Link>
           ))}
         </ul>
+        <div className="navbar-bar">
+          <FaBars
+            onClick={() => {
+              setShowSidebar(true)
+            }}
+            className="navbar-bar-icon"
+          />
+        </div>
       </div>
     </nav>
   )
