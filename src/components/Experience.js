@@ -25,8 +25,6 @@ const Experience = () => {
     allContentfulPortfolioExperience: { nodes: node },
   } = data
 
-  console.log(data)
-
   return (
     <section className="section-wrapper">
       <div className="container">
@@ -39,6 +37,7 @@ const Experience = () => {
           <div className="experience-list-wrapper">
             {node.map((item, index) => (
               <button
+                key={index}
                 className={`btn experience-button ${
                   portfolioItem == index ? "experience-button-active" : ""
                 }`}
@@ -67,8 +66,8 @@ const Experience = () => {
                     {companyName.toUpperCase()}
                   </p>
                   <ul className="experience-company-list">
-                    {tests.map(item => (
-                      <li className="experience-company-list-item" key={item}>
+                    {tests.map((item, index) => (
+                      <li className="experience-company-list-item" key={index}>
                         {item}
                       </li>
                     ))}

@@ -7,7 +7,7 @@ const Layout = ({ children }) => {
   const [showSidebar, setShowSidebar] = useState(false)
 
   return (
-    <div>
+    <div className="wrapper">
       <Navbar showSidebar={showSidebar} setShowSidebar={setShowSidebar} />
 
       <Sidebar showSidebar={showSidebar} setShowSidebar={setShowSidebar} />

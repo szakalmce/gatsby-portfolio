@@ -26,11 +26,11 @@ const Hero = () => {
         </div>
         <div className="hero-img-wrapper">
           <div className="hero-img-inner">
-            <StaticImage
+            {/* <StaticImage
               imgClassName="hero-img"
               src="../images/hero.webp"
               alt="img"
-            />
+            /> */}
           </div>
         </div>
       </div>

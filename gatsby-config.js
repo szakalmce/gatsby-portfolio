@@ -13,12 +13,14 @@ module.exports = {
   plugins: [
     {
       resolve: `gatsby-source-contentful`,
+
       options: {
         spaceId: `ml5cydo82awb`,
         // Learn about environment variables: https://gatsby.dev/env-vars
         accessToken: process.env.CONTENTFUL_TOKEN,
       },
     },
+    `gatsby-plugin-styled-components`,
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`, // Needed for dynamic images
