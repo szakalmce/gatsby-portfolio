@@ -15,12 +15,12 @@ const contact = () => {
               action="/"
             >
               <input type="hidden" name="bot-field" />
-              <input type="hidden" name="form-name" value="porfolio-name" />
+              <input type="hidden" name="form-name" value="portfolio-form" />
               <div className="form-inner">
                 <p className="form-title">Get In Touch</p>
-                <input type="text" placeholder="NAME" />
-                <input type="email" placeholder="EMAIL" />
-                <textarea rows="7" placeholder="MESSAGE" />
+                <input name="name" type="text" placeholder="NAME" />
+                <input name="email" type="email" placeholder="EMAIL" />
+                <textarea name="message" rows="7" placeholder="MESSAGE" />
               </div>
               <button className="btn btn-form" type="submit">
                 Submit here
