@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { graphql, Link, useStaticQuery } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 
 const Experience = () => {
   const [portfolioItem, setPortfolioItem] = useState(0)
@@ -39,7 +39,7 @@ const Experience = () => {
               <button
                 key={index}
                 className={`btn experience-button ${
-                  portfolioItem == index ? "experience-button-active" : ""
+                  portfolioItem === index ? "experience-button-active" : ""
                 }`}
                 onClick={() => setPortfolioItem(index)}
               >

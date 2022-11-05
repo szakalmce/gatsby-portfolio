@@ -1,13 +1,6 @@
-import React from "react"
-import Layout from "gatsby-plugin-image"
+const React = require("react")
+const Layout = require("./src/components/Layout").default
 
-export const wrapPageElement = ({ element, props }) => {
+exports.wrapPageElement = ({ element, props }) => {
   return <Layout {...props}>{element}</Layout>
 }
-
-// const React = require("react")
-// const Layout = require("./src/components/layout")
-
-// exports.wrapPageElement = ({ element, props }) => {
-//   return <Layout {...props}>{element}</Layout>
-// }

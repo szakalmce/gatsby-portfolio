@@ -5,6 +5,13 @@
  --bg-gray: #f6f6f2;
  --main-color: #388087;
  --component-color: #cdedce;
+
+  --text-color: #FAED26;
+  --dark-bg-color: #46344e;
+  --gray-bg-color: #5a5560;
+  --light-bg: #9d8d8f;
+  --brown-bg: #9b786f;
+
 }
 
 *, *::after, *::before {

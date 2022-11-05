@@ -20,7 +20,6 @@ module.exports = {
         accessToken: process.env.CONTENTFUL_TOKEN,
       },
     },
-    `gatsby-plugin-styled-components`,
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`, // Needed for dynamic images

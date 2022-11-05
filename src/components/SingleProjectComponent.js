@@ -48,10 +48,10 @@ const SingleProjectComponent = ({
           })}
         </ul>
         <div className="links-wrapper">
-          <a href={demo} target="_blank" className="link-item">
+          <a href={demo} className="link-item">
             <FaExternalLinkAlt />
           </a>
-          <a href={github} target="_blank" className="link-item">
+          <a href={github} className="link-item">
             <FaGithub />
           </a>
         </div>

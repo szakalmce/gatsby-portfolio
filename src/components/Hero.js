@@ -1,6 +1,5 @@
 import React from "react"
 import { socialLinks } from "../data/data"
-import { StaticImage } from "gatsby-plugin-image"
 import { Link } from "gatsby"
 
 const Hero = () => {
@@ -15,7 +14,7 @@ const Hero = () => {
           <button className="btn hero-btn">Contact me</button>
           <ul className="hero-social">
             {socialLinks.map(item => {
-              const { id, name, icon, link } = item
+              const { id, icon, link } = item
               return (
                 <Link className="hero-social-link" key={id} to={link}>
                   {icon}
