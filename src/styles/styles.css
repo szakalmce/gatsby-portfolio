@@ -109,18 +109,6 @@ body {
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 /* SINGLE PROJECT PAGE */
 
 .single-project-page-wrapper {
@@ -149,7 +137,6 @@ body {
   letter-spacing: .1rem;
   line-height: 1.5;
 }
-
 
 
 /** ABOUT PAGE **/
@@ -224,8 +211,6 @@ body {
   margin-top: 1rem;
 }
 
-
-
 .form-inner input,
 .form-inner textarea {
   padding: .75rem .5rem;
@@ -263,6 +248,30 @@ form textarea::placeholder {
   background-color: var(--main-color);
   color: #fff;
 }
+
+/*** SUCCESS PAGE ***/
+
+.success-wrapper {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.btn.btn-success {
+  border: 2px solid var(--main-color);
+  padding: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  color: var(--main-color);
+  transition: all .25s ease-in-out;
+}
+
+.btn.btn-success:hover {
+  background-color: var(--main-color);
+  color: var(--bg-gray)
+} 
 
 
 /******************************** PHONE QUERIES /********************************/
