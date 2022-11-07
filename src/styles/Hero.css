@@ -1,0 +1,148 @@
+/* HERO */
+
+.hero-wrapper {
+  background-color: var(--bg-gray);
+  height: 80vh;
+  position: relative;
+  z-index: 0;
+}
+
+.hero-bg-wrapper {
+  position: absolute;
+  background-color: var(--main-color);
+  height: 100%;
+  width: 65%;
+  left: 0;
+  top: 0;
+}
+
+.hero-inner {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+
+.hero-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.hero-line {
+  width: 40px;
+  background-color: var(--component-color);
+  height: 3px;
+}
+
+.title {
+  font-size: 4rem;
+  color: var(--bg-gray);
+}
+
+.sub-title {
+  font-size: 1.5rem;
+  color: var(--bg-gray);
+}
+
+.btn.hero-btn  {
+  background-color: var(--bg-gray);
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  letter-spacing: 0;
+  border-radius: 10px;
+  transition: all .25s ease-in-out;
+  margin-bottom: 1rem;
+  border: 2px solid transparent;
+}
+
+.hero-btn:hover {
+  border: 2px solid var(--bg-gray);
+  color: var(--bg-gray);
+  background-color: var(--main-color);
+}
+
+.hero-social {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 1.5rem;
+}
+
+.hero-social-link {
+  font-size: 1.2rem;
+  width: 30px;
+  height: 30px;
+  background-color: var(--bg-gray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  color: #000;
+  transition: all .25s ease-in-out;
+  border: 2px solid transparent;
+}
+
+.hero-social-link:hover {
+  color: var(--bg-gray);
+  background-color: var(--main-color);
+  transform: scale(1.2);
+}
+
+.hero-img-wrapper {
+  position: relative;
+}
+
+.hero-img-inner {
+
+  position: absolute;
+  top: 50%;
+  left: -50%;
+  transform: translateY(-50%);
+}
+
+
+@media screen and (max-width: 750px) {
+
+
+ 
+
+  .hero-wrapper {
+    background-color: var(--main-color);
+    height: 60vh;
+  }
+
+  .hero-img-wrapper {
+    display: none;
+  }
+
+  .hero-inner {
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .title {
+    font-size: 3rem;
+    color: var(--bg-gray);
+  }
+
+  .sub-title {
+    font-size: 1.25rem;
+    color: var(--bg-gray);
+  }
+
+  .hero-img-inner {
+    position: static;
+    top: 0;
+    left: 0;
+    transform: none;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+}

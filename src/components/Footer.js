@@ -15,7 +15,7 @@ const Footer = () => {
             ))}
           </ul>
           <p className="footer-copy">
-            copyright@2022 <span>webdev</span> all rights reserved
+            copyright@2022 <span>TomekGarbarz</span> all rights reserved
           </p>
         </div>
       </div>

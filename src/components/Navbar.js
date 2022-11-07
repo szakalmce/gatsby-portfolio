@@ -9,9 +9,9 @@ const Navbar = ({ setShowSidebar, showSidebar }) => {
     <nav className="navbar-wrapper">
       <div className="container navbar-inner">
         <div className="navbar-logo-wrapper">
-          <h1 className="navbar-logo">
-            Web<span>Dev</span>
-          </h1>
+          <Link to="/" className="navbar-logo">
+            Tomek<span>Garbarz</span>
+          </Link>
         </div>
         <ul className="navbar-nav-wrapper">
           {NavLinks.map(item => (
